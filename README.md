@@ -36,7 +36,7 @@ This project provides a tool for converting the output of the `docker-bench` sec
 
     Then use the provided Python script `docker_bench_make_report.py` to generate the report.
 
-    This will produce a `docker_bench_report.json` file in the same directory.
+    This will produce a `docker_bench_report.html` file in the same directory.
 
 
 ## Contributing
