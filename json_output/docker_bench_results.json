@@ -1,0 +1,557 @@
+[
+    {
+        "tag": "[INFO]",
+        "description": "1 - Host Configuration",
+        "title": true
+    },
+    {
+        "tag": "[WARN]",
+        "description": "1.1  - Ensure a separate partition for containers has been created",
+        "title": false
+    },
+    {
+        "tag": "[NOTE]",
+        "description": "1.2  - Ensure the container host has been Hardened",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "1.3  - Ensure Docker is up to date",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* Using 20.10.25+1, verify is it up to date as deemed necessary",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* Your operating system vendor may provide support and security maintenance for Docker",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "1.4  - Ensure only trusted users are allowed to control Docker daemon",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* docker:x:142:ektoras",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "1.5  - Ensure auditing is configured for the Docker daemon",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "1.6  - Ensure auditing is configured for Docker files and directories - /var/lib/docker",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "1.7  - Ensure auditing is configured for Docker files and directories - /etc/docker",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "1.8  - Ensure auditing is configured for Docker files and directories - docker.service",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "1.9  - Ensure auditing is configured for Docker files and directories - docker.socket",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "1.10  - Ensure auditing is configured for Docker files and directories - /etc/default/docker",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "1.11  - Ensure auditing is configured for Docker files and directories - /etc/docker/daemon.json",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* File not found",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "1.12  - Ensure auditing is configured for Docker files and directories - /usr/bin/docker-containerd",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* File not found",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "1.13  - Ensure auditing is configured for Docker files and directories - /usr/bin/docker-runc",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* File not found",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "2 - Docker daemon configuration",
+        "title": true
+    },
+    {
+        "tag": "[WARN]",
+        "description": "2.1  - Ensure network traffic is restricted between containers on the default bridge",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "2.2  - Ensure the logging level is set to 'info'",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "2.3  - Ensure Docker is allowed to make changes to iptables",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "2.4  - Ensure insecure registries are not used",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "2.5  - Ensure aufs storage driver is not used",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "2.6  - Ensure TLS authentication for Docker daemon is configured",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* Docker daemon not listening on TCP",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "2.7  - Ensure the default ulimit is configured appropriately",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* Default ulimit doesn't appear to be set",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "2.8  - Enable user namespace support",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "2.9  - Ensure the default cgroup usage has been confirmed",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "2.10  - Ensure base device size is not changed until needed",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "2.11  - Ensure that authorization for Docker client commands is enabled",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "2.12  - Ensure centralized and remote logging is configured",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "2.13  - Ensure operations on legacy registry (v1) are Disabled (Deprecated)",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "2.14  - Ensure live restore is Enabled",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "2.15  - Ensure Userland Proxy is Disabled",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "2.16  - Ensure daemon-wide custom seccomp profile is applied, if needed",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "2.17  - Ensure experimental features are avoided in production",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "2.18  - Ensure containers are restricted from acquiring new privileges",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "3 - Docker daemon configuration files",
+        "title": true
+    },
+    {
+        "tag": "[PASS]",
+        "description": "3.1  - Ensure that docker.service file ownership is set to root:root",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "3.2  - Ensure that docker.service file permissions are set to 644 or more restrictive",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "3.3  - Ensure that docker.socket file ownership is set to root:root",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "3.4  - Ensure that docker.socket file permissions are set to 644 or more restrictive",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "3.5  - Ensure that /etc/docker directory ownership is set to root:root",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "3.6  - Ensure that /etc/docker directory permissions are set to 755 or more restrictive",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "3.7  - Ensure that registry certificate file ownership is set to root:root",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* Directory not found",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "3.8  - Ensure that registry certificate file permissions are set to 444 or more restrictive",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* Directory not found",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "3.9  - Ensure that TLS CA certificate file ownership is set to root:root",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* No TLS CA certificate found",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "3.10  - Ensure that TLS CA certificate file permissions are set to 444 or more restrictive",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* No TLS CA certificate found",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "3.11  - Ensure that Docker server certificate file ownership is set to root:root",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* No TLS Server certificate found",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "3.12  - Ensure that Docker server certificate file permissions are set to 444 or more restrictive",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* No TLS Server certificate found",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "3.13  - Ensure that Docker server certificate key file ownership is set to root:root",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* No TLS Key found",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "3.14  - Ensure that Docker server certificate key file permissions are set to 400",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* No TLS Key found",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "3.15  - Ensure that Docker socket file ownership is set to root:docker",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "3.16  - Ensure that Docker socket file permissions are set to 660 or more restrictive",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "3.17  - Ensure that daemon.json file ownership is set to root:root",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* File not found",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "3.18  - Ensure that daemon.json file permissions are set to 644 or more restrictive",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* File not found",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "3.19  - Ensure that /etc/default/docker file ownership is set to root:root",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "3.20  - Ensure that /etc/default/docker file permissions are set to 644 or more restrictive",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "4 - Container Images and Build File",
+        "title": true
+    },
+    {
+        "tag": "[INFO]",
+        "description": "4.1  - Ensure a user for the container has been created",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* No containers running",
+        "title": false
+    },
+    {
+        "tag": "[NOTE]",
+        "description": "4.2  - Ensure that containers use trusted base images",
+        "title": false
+    },
+    {
+        "tag": "[NOTE]",
+        "description": "4.3  - Ensure unnecessary packages are not installed in the container",
+        "title": false
+    },
+    {
+        "tag": "[NOTE]",
+        "description": "4.4  - Ensure images are scanned and rebuilt to include security patches",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "4.5  - Ensure Content trust for Docker is Enabled",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "4.6  - Ensure HEALTHCHECK instructions have been added to the container image",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "* No Healthcheck found: [sonarqube:latest]",
+        "title": false
+    },
+    {
+        "tag": "[WARN]",
+        "description": "* No Healthcheck found: [bkimminich/juice-shop:latest]",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "4.7  - Ensure update instructions are not use alone in the Dockerfile",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* Update instruction found: [sonarqube:latest]",
+        "title": false
+    },
+    {
+        "tag": "[NOTE]",
+        "description": "4.8  - Ensure setuid and setgid permissions are removed in the images",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "4.9  - Ensure COPY is used instead of ADD in Dockerfile",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* ADD in image history: [ghcr.io/zaproxy/zaproxy:stable]",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* ADD in image history: [sonarqube:latest]",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* ADD in image history: [docker/docker-bench-security:latest]",
+        "title": false
+    },
+    {
+        "tag": "[NOTE]",
+        "description": "4.10  - Ensure secrets are not stored in Dockerfiles",
+        "title": false
+    },
+    {
+        "tag": "[NOTE]",
+        "description": "4.11  - Ensure verified packages are only Installed",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "5 - Container Runtime",
+        "title": true
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* No containers running, skipping Section 5",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "6 - Docker Security Operations",
+        "title": true
+    },
+    {
+        "tag": "[INFO]",
+        "description": "6.1  - Avoid image sprawl",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* There are currently: 4 images",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "6.2  - Avoid container sprawl",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "* There are currently a total of 8 containers, with 1 of them currently running",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "7 - Docker Swarm Configuration",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "7.1  - Ensure swarm mode is not Enabled, if not needed",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "7.2  - Ensure the minimum number of manager nodes have been created in a swarm (Swarm mode not enabled)",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "7.3  - Ensure swarm services are binded to a specific host interface (Swarm mode not enabled)",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "7.4  - Ensure data exchanged between containers are encrypted on different nodes on the overlay network",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "7.5  - Ensure Docker's secret management commands are used for managing secrets in a Swarm cluster (Swarm mode not enabled)",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "7.6  - Ensure swarm manager is run in auto-lock mode (Swarm mode not enabled)",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "7.7  - Ensure swarm manager auto-lock key is rotated periodically (Swarm mode not enabled)",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "7.8  - Ensure node certificates are rotated as appropriate (Swarm mode not enabled)",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "7.9  - Ensure CA certificates are rotated as appropriate (Swarm mode not enabled)",
+        "title": false
+    },
+    {
+        "tag": "[PASS]",
+        "description": "7.10  - Ensure management plane traffic has been separated from data plane traffic (Swarm mode not enabled)",
+        "title": false
+    },
+    {
+        "tag": "[INFO]",
+        "description": "Checks: 74",
+        "title": true
+    },
+    {
+        "tag": "[INFO]",
+        "description": "Score: 12",
+        "title": true
+    }
+]
